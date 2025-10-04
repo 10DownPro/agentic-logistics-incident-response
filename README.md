@@ -34,12 +34,26 @@ The system needed to deliver:
   5. Foundation for AI-assisted predictive capabilities
 
 ## Solution
+
 A custom ServiceNow scoped application that:
 
-- Provide structured visibility into delivery incidents
-- Automatically notify logistics managers & assign incidents to regional ops teams
-- Escalate based on ETA thresholds or penalty cost triggers
-- Lay groundwork for AI-assisted predictions of late deliveries before they occur
+- Records delivery delays with structured data capture
+- Automates notification and escalation workflows via Flow Designer
+- Integrates penalty cost thresholds for risk management
+- Provides audit trail for compliance and analysis
+- Enables external system integration through webhooks and MCP protocol
+
+---
+
+## System Components
+
+1. **External Data Ingestion** - Logistics providers transmit delay events to ServiceNow via MCP protocol and webhook endpoints
+2. **Custom Table (Delivery Delay)** - Structured data model capturing order details, route info, ETA, and penalty costs
+3. **Flow Designer Workflows** - Automated triggers for notifications, assignments, and escalations based on configurable business rules
+4. **AI Agent Analysis** - Evaluates delay severity, predicts penalty risk, and recommends escalation paths
+5. **n8n Integration** - Receives routing decisions via webhook and coordinates with external logistics and customer systems
+6. **Notification System** - Real-time alerts to logistics managers and regional ops teams
+7. **Audit Trail** - Complete logging of all incidents, status changes, and approvals for compliance
 
 ---
 
