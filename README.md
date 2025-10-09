@@ -64,8 +64,7 @@ Support components include:
 - **Update Tool:** `update_execution_status`  
 - **Integration User:** Scoped with read/write and API access  
 
-### Screenshots to Add:
-- <img width="852" height="554" alt="Screenshot 2025-10-09 at 8 46 02 AM" src="https://github.com/user-attachments/assets/c17f8529-6eb6-4d76-b7d8-2fd76a138b85" />
+<img width="852" height="554" alt="Screenshot 2025-10-09 at 8 46 02 AM" src="https://github.com/user-attachments/assets/c17f8529-6eb6-4d76-b7d8-2fd76a138b85" />
  – end-to-end system architecture  
 - `/screenshots/mcp_flow_overview.png` – orchestration flow in ServiceNow  
 - `/screenshots/ai_agent_studio_config.png` – configuration of the AI agent  
