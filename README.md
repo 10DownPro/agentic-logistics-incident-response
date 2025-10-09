@@ -165,10 +165,9 @@ A secondary AI Agent monitors MCP logs and ServiceNow system logs for recurring 
 - Feeds data into AI Agent Studio for pattern learning  
 - Flags anomalies and generates a proactive alert  
 
-### Screenshots to Add:
-- `/screenshots/mcp_log_error_sample.png` – example of failed request log  
-- `/screenshots/ai_agent_error_monitor.png` – AI analysis of recurring errors  
-
+<img width="1460" height="804" alt="Screenshot 2025-10-09 at 8 54 39 AM" src="https://github.com/user-attachments/assets/dc7a7449-056b-4bc7-844c-ade7984646a8" />
+ – example of failed request log  
+ 
 ---
 
 ## 10. Results
@@ -179,8 +178,8 @@ A secondary AI Agent monitors MCP logs and ServiceNow system logs for recurring 
 - Early anomaly detection via AI monitoring reduced repeat failures  
 - Data consistency improved across all instances  
 
-### Screenshots to Add:
-- `/screenshots/before_after_result.png` – comparison of 502 failure vs success  
+<img width="1456" height="805" alt="Screenshot 2025-10-09 at 8 56 29 AM" src="https://github.com/user-attachments/assets/750fa665-fe67-4efb-93e9-cef1488dee06" />
+ – comparison of 502 failure vs success  
 - `/screenshots/performance_dashboard.png` – dispatch metrics dashboard  
 - `/screenshots/audit_log_success.png` – record update audit log  
 
@@ -190,7 +189,7 @@ A secondary AI Agent monitors MCP logs and ServiceNow system logs for recurring 
 
 | Lesson | Takeaway |
 |--------|-----------|
-| Instance targeting is explicit | Always define the "instance" property in MCP payloads |
+| Instance targeting is explicit | Make sure your Bearer Auth token is associated with the correct "instance" |
 | Cross-scope ACLs matter | Keep permissions scoped properly to avoid query blocks |
 | AI Agents amplify insight | Automating error categorization accelerates fixes |
 | GlideRecord precision | Data type consistency prevents silent failures |
@@ -245,4 +244,4 @@ Atlanta, GA
 
 Systems and AI Engineer | ServiceNow and Automation Builder  
 Website: [tvedtlazenby.me](https://tvedtlazenby.me)  
-Email: info@10downproductions.com
+Email: tvedtlazenby@gmail.com
