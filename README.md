@@ -155,10 +155,11 @@ The orchestration was built in **AI Agent Studio** and controlled using MCP inte
 })(inputs);
 ```
 
-### Screenshots to Add:
-- `/screenshots/flow_designer_full.png` – full flow in Flow Designer  
-- `/screenshots/mcp_tool_payloads.png` – payload JSON configuration  
-- `/screenshots/update_success_log.png` – successful MCP execution  
+| Screenshot | Description |
+|-------------|-------------|
+| <img width="734" height="400" alt="Screenshot 2025-10-09 at 9 31 27 AM" src="https://github.com/user-attachments/assets/99fe479c-2be2-4892-a376-f6d744bc9f5e" /> | **Payload JSON Configuration** – Shows the MCP tool setup with request and response payloads used to validate routes and update delivery records. |
+| <img width="921" height="502" alt="Screenshot 2025-10-09 at 9 31 59 AM" src="https://github.com/user-attachments/assets/0c41112f-4723-4515-84ca-e4436a8efd28" /> <br> <img width="734" height="404" alt="Screenshot 2025-10-09 at 9 32 15 AM" src="https://github.com/user-attachments/assets/d21488ff-f00c-4edd-8365-02ccdc185aae" /> | **Successful MCP Execution** – Displays the MCP tool successfully executing the update request, confirming route decision processing and record validation. |
+
 
 ---
 
@@ -170,8 +171,9 @@ A secondary AI Agent monitors MCP logs and ServiceNow system logs for recurring 
 - Feeds data into AI Agent Studio for pattern learning  
 - Flags anomalies and generates a proactive alert  
 
-<img width="1460" height="804" alt="Screenshot 2025-10-09 at 8 54 39 AM" src="https://github.com/user-attachments/assets/dc7a7449-056b-4bc7-844c-ade7984646a8" />
- – example of failed request log  
+| Screenshot | Description |
+|-------------|-------------|
+| <img width="1460" height="804" alt="Screenshot 2025-10-09 at 8 54 39 AM" src="https://github.com/user-attachments/assets/dc7a7449-056b-4bc7-844c-ade7984646a8" /> | **Example of Failed Request Log** – Shows the MCP execution error output during a failed route update attempt, useful for debugging payload or instance configuration issues. |
  
 ---
 
@@ -183,10 +185,11 @@ A secondary AI Agent monitors MCP logs and ServiceNow system logs for recurring 
 - Early anomaly detection via AI monitoring reduced repeat failures  
 - Data consistency improved across all instances  
 
-<img width="1456" height="805" alt="Screenshot 2025-10-09 at 8 56 29 AM" src="https://github.com/user-attachments/assets/750fa665-fe67-4efb-93e9-cef1488dee06" />
- – comparison of 502 failure vs success  
-<img width="1451" height="598" alt="Screenshot 2025-10-09 at 9 04 05 AM" src="https://github.com/user-attachments/assets/9360aa97-2eb1-416f-8429-a1b996a93ee8" />
- – record update audit log (you can see that the status has updated to "dispatched")
+| Screenshot | Description |
+|-------------|-------------|
+| <img width="1456" height="805" alt="Screenshot 2025-10-09 at 8 56 29 AM" src="https://github.com/user-attachments/assets/750fa665-fe67-4efb-93e9-cef1488dee06" /> | **Comparison of 502 Failure vs Success** – Displays the difference between a failed MCP request (502 error) and a successful execution, showing how payload validation and instance targeting affect response outcomes. |
+| <img width="1451" height="598" alt="Screenshot 2025-10-09 at 9 04 05 AM" src="https://github.com/user-attachments/assets/9360aa97-2eb1-416f-8429-a1b996a93ee8" /> | **Record Update Audit Log** – Shows the system audit trail confirming the record update, including the status change to “dispatched” after successful MCP processing. |
+
 
 ---
 
