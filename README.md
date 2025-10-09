@@ -78,7 +78,7 @@ Support components include:
 | Platform | ServiceNow | Primary orchestration platform |
 | Automation | Multi-Client Processor (MCP) | Secure cross-instance communication |
 | Intelligence | AI Agent Studio / Predictive Intelligence | Smart detection and categorization of delivery issues |
-| Workflow | Flow Designer | Trigger and manage automation steps |
+| Workflow | AI Agent Studio | Trigger and manage automation steps |
 | Scripting | GlideRecord (JavaScript) | Update and query Delivery Delay table |
 | Analytics | Performance Analytics / Dashboard Widgets | Visualize dispatch metrics |
 | Data Storage | Custom Scoped Table | Track delivery details, ETA, and penalties |
@@ -98,9 +98,10 @@ Support components include:
 | last_updated | Date/Time | Audit trail field for change tracking |
 
 ### Screenshots to Add:
-- `/screenshots/delivery_delay_table.png` – custom table definition  
-- `/screenshots/route_id_field.png` – route_id field config  
-- `/screenshots/status_field.png` – status field config  
+<img width="1457" height="805" alt="Screenshot 2025-10-09 at 9 03 06 AM" src="https://github.com/user-attachments/assets/ec464a3c-4527-46bf-92c0-ff4094e0dd5c" />
+ – Delivery Delay Table  
+<img width="1456" height="804" alt="Screenshot 2025-10-09 at 9 02 33 AM" src="https://github.com/user-attachments/assets/d8f9729d-05fe-4075-b833-7440aa883699" />
+ – Supply Agreement Table 
 
 ---
 
@@ -117,14 +118,16 @@ Steps implemented in AI Agent Studio:
 4. Recommend escalation or auto-update path  
 
 ### Screenshots to Add:
-- `/screenshots/ai_agent_prompt_flow.png` – AI Agent decision flow  
-- `/screenshots/ai_agent_output_example.png` – classification output preview  
+<img width="1458" height="770" alt="Screenshot 2025-10-09 at 9 12 51 AM" src="https://github.com/user-attachments/assets/cdd46e43-20fa-4284-a778-2246a1ae36b2" /> – AI Agent Prompt   
+<img width="1469" height="781" alt="Screenshot 2025-10-09 at 9 13 48 AM" src="https://github.com/user-attachments/assets/24355845-5c03-4798-ae68-24700f61d575" /><br>
+<img width="1468" height="799" alt="Screenshot 2025-10-09 at 9 14 21 AM" src="https://github.com/user-attachments/assets/6906d90d-53bf-45de-a509-1b499c1ea6f1" />  – Orchestration workflow 
+
 
 ---
 
-## 8. MCP Orchestration and Flow Designer Logic
+## 8. MCP Orchestration and AI Agent Logic
 
-The orchestration was built in **Flow Designer** and controlled using MCP integration steps.
+The orchestration was built in **AI Agent Studio** and controlled using MCP integration steps.
 
 1. **Step 1 – execute_route:** Initiates the delivery route.  
 2. **Step 2 – notify_delivery_delay:** Calculates ETA variance and penalty rate.  
@@ -180,8 +183,8 @@ A secondary AI Agent monitors MCP logs and ServiceNow system logs for recurring 
 
 <img width="1456" height="805" alt="Screenshot 2025-10-09 at 8 56 29 AM" src="https://github.com/user-attachments/assets/750fa665-fe67-4efb-93e9-cef1488dee06" />
  – comparison of 502 failure vs success  
-- `/screenshots/performance_dashboard.png` – dispatch metrics dashboard  
-- `/screenshots/audit_log_success.png` – record update audit log  
+<img width="1451" height="598" alt="Screenshot 2025-10-09 at 9 04 05 AM" src="https://github.com/user-attachments/assets/9360aa97-2eb1-416f-8429-a1b996a93ee8" />
+ – record update audit log (you can see that the status has updated to "dispatched")
 
 ---
 
