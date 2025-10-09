@@ -64,10 +64,15 @@ Support components include:
 - **Update Tool:** `update_execution_status`  
 - **Integration User:** Scoped with read/write and API access  
 
-<img width="852" height="554" alt="Screenshot 2025-10-09 at 8 46 02 AM" src="https://github.com/user-attachments/assets/c17f8529-6eb6-4d76-b7d8-2fd76a138b85" />
- – end-to-end system architecture  
-- `/screenshots/mcp_flow_overview.png` – orchestration flow in ServiceNow  
-- `/screenshots/ai_agent_studio_config.png` – configuration of the AI agent  
+| Screenshot | Description |
+|-------------|-------------|
+| <img width="852" height="554" alt="Screenshot 2025-10-09 at 8 46 02 AM" src="https://github.com/user-attachments/assets/c17f8529-6eb6-4d76-b7d8-2fd76a138b85" /> | **End-to-End System Architecture** – Full architecture view showing how the AI Agent, MCP tool, Script Include, and Flow Designer connect to automate delivery impact analysis. |
+| <img width="752" height="345" alt="Screenshot 2025-10-09 at 9 18 20 AM" src="https://github.com/user-attachments/assets/aed38c71-d3b2-47e4-b0ba-f6c9ff572b73" /> | **Visual of Internal Issue** – Demonstrates how mismatched route IDs and instance targeting caused data retrieval errors during initial MCP setup. |
+| <img width="1458" height="770" alt="Screenshot 2025-10-09 at 9 12 51 AM" src="https://github.com/user-attachments/assets/cdd46e43-20fa-4284-a778-2246a1ae36b2" /> | **AI Agent Prompt** – Shows the final AI Agent prompt configuration used to parse ETA, delivery window, and penalty rate inputs before calling the MCP tool. |
+| <img width="1469" height="781" alt="Screenshot 2025-10-09 at 9 13 48 AM" src="https://github.com/user-attachments/assets/24355845-5c03-4798-ae68-24700f61d575" /> | **AI Agent Configuration** – Displays the step-by-step AI Agent Studio configuration, including role statement, agent steps, and connected MCP reference. |
+| <img width="1468" height="782" alt="Screenshot 2025-10-09 at 9 22 36 AM" src="https://github.com/user-attachments/assets/bc9b707f-3afc-456e-baad-501312e4f430" /> | **AI Agent Test Output** – Displays the AI Agent execution results, including calculated impact, status update to “Dispatched,” and successful MCP-to-table record validation. |
+| <img width="1467" height="773" alt="Screenshot 2025-10-09 at 9 25 33 AM" src="https://github.com/user-attachments/assets/9846bf14-7f3d-4d12-ba0a-4b59c51fef90" /> | **AI Agent Tools** – Displays the configuration of tools connected to the Route Decision Agent within AI Agent Studio, including the MCP for route validation and the Script Include for automated decision logic execution. |
+
 
 ---
 
@@ -97,11 +102,10 @@ Support components include:
 | instance_name | String | Source instance of record |
 | last_updated | Date/Time | Audit trail field for change tracking |
 
-### Screenshots to Add:
-<img width="1457" height="805" alt="Screenshot 2025-10-09 at 9 03 06 AM" src="https://github.com/user-attachments/assets/ec464a3c-4527-46bf-92c0-ff4094e0dd5c" />
- – Delivery Delay Table  
-<img width="1456" height="804" alt="Screenshot 2025-10-09 at 9 02 33 AM" src="https://github.com/user-attachments/assets/d8f9729d-05fe-4075-b833-7440aa883699" />
- – Supply Agreement Table 
+| Screenshot | Description |
+|-------------|-------------|
+| <img width="1457" height="805" alt="Screenshot 2025-10-09 at 9 03 06 AM" src="https://github.com/user-attachments/assets/ec464a3c-4527-46bf-92c0-ff4094e0dd5c" /> | **Delivery Delay Table** – Displays stored logistics records containing ETA minutes, delivery window hours, penalty rates, and calculated impact values used by the AI Agent for delay analysis. |
+| <img width="1456" height="804" alt="Screenshot 2025-10-09 at 9 02 33 AM" src="https://github.com/user-attachments/assets/d8f9729d-05fe-4075-b833-7440aa883699" /> | **Supply Agreement Table** – Contains supplier, route, and contractual terms data referenced by the AI Agent during route validation and decision-making. |
 
 ---
 
@@ -117,9 +121,7 @@ Steps implemented in AI Agent Studio:
 3. Assign a “Delay Severity” label using the trained model  
 4. Recommend escalation or auto-update path  
 
-### Screenshots to Add:
-<img width="1458" height="770" alt="Screenshot 2025-10-09 at 9 12 51 AM" src="https://github.com/user-attachments/assets/cdd46e43-20fa-4284-a778-2246a1ae36b2" /> – AI Agent Prompt   
-<img width="1469" height="781" alt="Screenshot 2025-10-09 at 9 13 48 AM" src="https://github.com/user-attachments/assets/24355845-5c03-4798-ae68-24700f61d575" /><br>
+<br>
 <img width="1468" height="799" alt="Screenshot 2025-10-09 at 9 14 21 AM" src="https://github.com/user-attachments/assets/6906d90d-53bf-45de-a509-1b499c1ea6f1" />  – Orchestration workflow 
 
 
